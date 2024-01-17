@@ -1,0 +1,40 @@
+
+<div class="container-fluid">
+
+
+<h2> page 2</h2>
+<p>register works!</p>
+<button type="button" class="btn btn-link" routerLink="/user"> Go to home</button>
+
+<div class="row" *ngIf="active">
+    <h3>welcome {{firstname}}</h3>
+</div>
+<div>
+    <table class="table">
+        <tr>
+            <th> <i class="fa-solid fa-poo"></i>name</th>
+            <th>age</th>
+            <th>country</th>
+        </tr>
+        <tr *ngFor="let item of datalist">
+            <td> <i class="fa-solid fa-user"></i>{{item.name}}</td>
+            <td> {{item.code}}</td>
+            <td>{{item.country}}</td>
+            <td><i class="fa-solid fa-forward"></i></td>
+
+        </tr>
+    </table>
+</div>
+
+<div class="row">
+
+    <div [ngSwitch]="name">
+        <div *ngSwitchcase="">
+
+        </div>
+
+    </div>
+
+</div>
+
+</div>
